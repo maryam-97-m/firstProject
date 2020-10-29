@@ -1,0 +1,460 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto",sans-serif;
+}
+
+body
+{
+    color: #555555;
+}
+ul 
+{
+    list-style-type: none;
+    
+}
+a
+{
+    text-decoration: none;
+}
+
+/*start styling nav section*/
+
+.nav 
+{
+
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 2;
+    width: 100%;
+    
+    
+}
+
+.nav .logo
+{
+    position: absolute;
+    top: 5px;
+    left: 10%;
+    width: 20%;
+}
+
+.nav .logo a
+{
+    color: #ff305b;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav .minue
+{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 50%;
+    
+}
+.nav .minue ul li
+{
+    float: left;
+    padding-left: 4%;
+}
+
+.nav ul li a
+{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    transition: color 1s;
+    
+}
+.nav ul li a:hover
+{
+    color: #ff305b;
+}
+.nav .minue ul li .active ,
+.portfolio .list-link ul li .active
+{
+    color: #ff305b;
+}
+/*end styling nav section*/
+
+/*start styling home section*/
+.home
+{
+    
+    position: relative;
+    color: #fff;
+    text-align: center;
+    
+}
+.home img
+{
+    width: 100%;
+    
+}
+
+.home .slider
+{
+    background-color: rgba(0,0,0,0.77);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    padding-top: 10%;
+}
+
+.home .slider h1
+{
+    color: #ff305b;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.home .slider h3
+{
+    margin: 10% auto 10px;
+    font-weight: 600;
+    font-size: 24px
+}
+
+.home .slider p
+{
+    font-size: 26px
+}
+
+@keyframes example {
+    0%   {content: " ";}
+    2%   {content: " w";}
+    4%   {content: " we";}
+    6%   {content: " web";}
+    8%   {content: " web ";}
+    10%   {content: " web d";}
+    12%   {content: " web de";}
+    14%   {content: " web des";}
+    16%   {content: " web desi";}
+    18%   {content: " web desig";}
+    20%   {content: " web design";}
+    22%   {content: " web designe";}
+    24%   {content: " web designer";}
+    26%   {content: " web designe";}
+    28%   {content: " web design";}
+    30%   {content: " web desig";}
+    32%   {content: " web desi";}
+    34%   {content: " web des";}
+    36%   {content: " web de";}
+    38%   {content: " web d";}
+    40%   {content: " web ";}
+    42%   {content: " web";}
+    44%   {content: " we";}
+    46%   {content: " w";}
+    48%   {content: " ";}
+    50%   {content: " w";}
+    52%   {content: " we";}
+    54%   {content: " web";}
+    56%   {content: " web";}
+    58%   {content: " web ";}
+    60%   {content: " web d";}
+    62%   {content: " web de";}
+    64%   {content: " web dev";}
+    66%   {content: " web deve";}
+    68%   {content: " web devel";}
+    70%   {content: " web develo";}
+    72%   {content: " web develop";}
+    74%   {content: " web develope";}
+    76%   {content: " web developer";}
+    78%   {content: " web develope";}
+    80%   {content: " web develop";}
+    82%   {content: " web develo";}
+    84%   {content: " web devel";}
+    86%   {content: " web deve";}
+    88%   {content: " web dev";}
+    90%   {content: " web de";}
+    92%   {content: " web d";}
+    94%   {content: " web ";}
+    96%   {content: " web";}
+    98%   {content: " we";}
+    100%   {content: " w";}
+    
+
+
+ 
+   
+
+
+    
+    
+  }
+.home .slider p .animation::before
+{
+    content: "";
+    animation-name: example;
+    animation-duration: 12s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+
+
+}
+
+/*end styling home section*/
+
+/*start styling about section*/
+.about
+{
+    overflow: hidden;
+    padding: 5% 10% 10% 10% ;
+    height: auto;
+}
+.about .image-about
+{
+    width: 30%;
+    height: auto;
+    float: left;
+    border: 5px solid #333;;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 10%;
+    
+}
+.about .image-about .img
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-image: url(img/about/profile.jpg);
+    background-size: 100% 100%;
+    border-radius: 5px;
+    
+}
+
+.about .image-about .img .result
+{
+    background-color: rgba(0,0,0,0.77);
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    position:relative;
+    left: 0px;
+    bottom: -360px;
+    opacity: 0;
+    
+    transition: opacity 1s, bottom 1s;
+    
+}
+.about .image-about .img:hover .result
+{
+    
+    bottom: 0px;
+    opacity: 1;
+    
+    
+}
+/*this image is needed for border*/
+.about .image-about img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    visibility: hidden;
+
+}
+
+.about .definition
+{
+    width: 50%;
+    float: left;
+}
+.definition h2
+{
+    border-left: #ff305b solid 7px;
+    padding-left: 2%;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.definition p
+{
+    margin: 20px 0px;
+    border-bottom: dashed 1px rgb(153, 153, 153);
+    padding-bottom: 6%;
+    font-size: 17px;
+    line-height: 135%;
+}
+.definition div ul
+{
+    overflow: auto;
+    
+}
+.definition div ul .cv
+{
+    float: left;
+    padding-right: 8%;
+    
+}
+.definition div ul span li
+{
+    margin-bottom: 15px;
+    
+}
+.definition div ul li span
+{
+    color: #333333;
+    font-weight: 550;
+    
+}
+.definition a ,
+.contact form a
+{
+    padding: 10px 24px;
+    margin-right: 20px;
+    margin-top: 15px;
+    border: #ff305b 3px solid;
+    border-radius: 5px;
+    background-color: #ff305b;
+    color: #fff;
+    display: inline-block;
+    transition: background 1s, border 1s;
+}
+.definition a:hover ,
+.contact form a:hover
+{
+    background: #EC2403;
+    border: #EC2403  3px solid;
+}
+@media (max-width: 1120px) and (min-width: 777px){
+    
+    .nav .minue 
+    {
+        width: 65%;
+        left: 35%;
+    }
+    
+    .nav .minue ul li
+    {
+        float: left;
+        padding-left: 2%;
+    }
+    .home
+    {
+        overflow: hidden;
+    }
+    .home img
+    {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.7,1);
+    }
+    .about
+    {
+        padding: 5% 1%;
+    }
+    .about .image-about 
+    {
+        width: 40%;
+        border: 0px;
+        padding: 5% 2%;
+    }
+    .about .image-about .img
+    {
+        width: 100%;
+        
+    }
+    .about .definition
+    {
+        width: 50%;
+        padding: 2% 0%;
+        font-size: 17px;
+        line-height: 120%;
+    }
+    .definition div ul .cv
+    {
+        float: left;
+        padding-right: 0%;
+        
+    }
+}
+@media (min-width:0px) and (max-width:776px){
+    .nav .logo
+    {
+        position: absolute;
+        top: 5px;
+        left: 30%;
+        width: 20%;
+    }
+    .nav .minue
+    {
+        display: none;
+        
+    }
+    
+    .home img
+    {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.7,1);
+    }
+    .home
+    {
+        overflow: hidden;
+        
+    }
+    .home .slider
+    {
+        padding: 30% 0;
+    }
+    .home .slider h1 
+    {
+        font-size: 30px;
+    }
+    .home .slider h3 ,
+    .home .slider p
+    {
+        font-size: 100%;
+        
+    }
+    .about
+    {
+        padding: 12% 5%;
+        
+    }
+    .about .image-about
+    {
+        width: 80%;
+
+        margin: 0px 12% 10%;
+        clear: both;
+        border: 0px;
+    }
+    .about .image-about .img .result
+    {
+        height: auto;
+    }
+    .about .definition
+    {
+        width: 100%;
+        clear: both;
+        font-size: 19px;
+        line-height: 150%;
+    }
+    .definition div ul .cv
+    {
+        clear: both;
+        padding-right: 2%;
+        
+    }
+}

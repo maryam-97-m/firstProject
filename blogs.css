@@ -1,0 +1,72 @@
+.blogs
+{
+ 
+    padding: 80px 8% 90px;
+}
+.blogs .blog
+{
+    width: 33.333%;
+    float: left;
+   
+    text-align: left;
+    padding: 0px 1.5%;
+}
+.blogs .blog .inner
+{
+    background-color: #fff;
+    padding-bottom: 9%;
+    
+}
+.blogs .blog .inner a
+{
+    padding-left: 5%;
+    margin-top: 2%;
+    color: #333;
+    transition: color 1s;
+    display: inline-block;
+
+}
+.blogs .blog .inner a h3 
+{
+    margin: 0 0 5%;
+    font-weight: 600;
+}
+.blogs .blog .inner a:hover
+{
+    color: #ff305b;
+} 
+.blogs .blog .inner p 
+{
+    padding-left: 5%;
+    line-height: 25px;
+    
+}
+
+.blogs .blog img
+{
+    width: 100%;
+    margin-bottom: 5%;
+}
+@media (min-width:0px) and (max-width:776px)
+{
+    .blogs
+    {
+
+          padding: 80px 20% 90px;
+    }
+    .blogs .blog
+    {
+        width: 100%;
+        clear: both;
+        margin-bottom: 7%;
+        
+    }
+}
+
+@media (max-width: 1120px) and (min-width: 777px){
+    .blogs
+    {
+
+          padding: 80px 5% 90px;
+    }
+}

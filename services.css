@@ -1,0 +1,107 @@
+.services ,
+.blogs
+{
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 80px 0 40px;
+    overflow: auto;
+}
+.services h2 ,
+.portfolio h2 ,
+.blogs h2 ,
+.testimonial h2 ,
+.contact h2
+{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    margin: 0 0 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+}
+ h2 hr
+{
+    border-top: 1px solid #ff305b;
+    width: 70px;
+    margin: 20px auto 0;
+}
+.mid
+{
+    width: 170px;
+    
+    margin: 3px auto;
+}
+.last
+{
+    margin-top: 3px;
+}
+.services .multi-services
+{
+    overflow: auto;
+    
+    margin: 0px 4%;
+    position: relative;
+    
+    min-height: 1px;
+    
+}
+
+.services .multi-services .single-service ,
+.portfolio .single-service
+{
+    text-align: center;
+    width: 25%;
+    float: left;
+    padding: 5% 1%;
+    transition: background-color 1s;
+   
+}
+.services .multi-services .single-service:hover
+{
+    background-color: #fff;
+}
+
+.services .multi-services .single-service h3
+{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+    
+}
+.services .multi-services .single-service p
+{
+    width: 100%;
+    margin: auto;
+    padding: 0px 2%;
+    line-height: 25px;
+}
+@media (min-width:0px) and (max-width:776px){
+   
+    .services .multi-services
+    {
+        padding: 0 10%;
+    }
+    
+    .services .multi-services .single-service
+    {
+        clear: both;
+        width: 100%;
+        margin: auto;
+        padding: 10%;
+    }
+
+}
+@media (max-width: 1120px) and (min-width: 777px){
+    
+    .services .multi-services .single-service
+    {
+        
+        width: 50%;
+        margin: auto;
+        padding: 5% 3%;
+    }
+}    

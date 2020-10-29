@@ -1,0 +1,147 @@
+.testimonial ,
+.contact
+{
+    text-align: center;
+    padding: 3% 0;
+}
+.testimonial .alex
+{
+    text-align: left;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 40px 20px 40px 0px;
+    border-radius: 5px;
+}
+.testimonial .alex .corner-pink
+{
+    position: absolute;
+    border-top: 100px solid #ff305b;
+    border-left: 100px solid #ff305b;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top-left-radius: 5px;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    
+    
+}
+.testimonial .alex .gray-div
+{
+    position: relative;
+    top: 0;
+    left: 0%;
+    height: 200px;
+    border-bottom: 50px solid #f1f1f1;
+    background-color: #f1f1f1;
+   
+    
+}
+
+.testimonial .alex .gray-div h3{
+    background-color: transparent;
+    position: absolute;
+    top: 5%;
+    left: 27%;
+    
+}
+.testimonial .alex .gray-div a{
+    background-color: transparent;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    color: #777777;
+    font-size: 15px;
+    font-weight: 600;
+}
+.testimonial .alex .gray-div p{
+    background-color: transparent;
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    font-size: 17px;
+    font-weight:500;
+    color: #777;
+    line-height:25px;
+}
+.testimonial .alex .gray-div .img-test
+{
+   
+    position: absolute;
+    left: 8%;
+    top: 6%;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+.testimonial .alex .gray-div .img-test img
+{
+    width: 100%;
+    border-radius: 50%;
+}
+.testimonial .hidden
+{
+    display: none;
+}
+
+@media (min-width:0px) and (max-width:776px){
+    .testimonial .alex
+    {
+        
+        width: 60%;
+        
+    }
+    .testimonial .alex .corner-pink
+    {
+    
+        border-top: 70px solid #ff305b;
+        border-left: 70px solid #ff305b;
+        border-bottom: 70px solid transparent;
+        border-right: 70px solid transparent;
+       
+        
+        
+    }
+    .testimonial .alex .gray-div
+    {
+        
+        height: 400px;
+        
+        
+    }
+    .testimonial .alex .gray-div h3{
+       
+        top: 150px;
+        left: 20px;
+        
+    }
+    .testimonial .alex .gray-div a{
+       
+        top: 180px;
+        left: 20px;
+    }
+    .testimonial .alex .gray-div p{
+        top: 210px;
+        left: 20px;
+    }
+    .testimonial .alex .gray-div .img-test
+    {
+    
+        width: 110px;
+        height: 110px;
+        left: 40%;
+        top: 0%;
+        
+    }
+}
+@media (max-width: 1120px) and (min-width: 777px){
+    .testimonial .alex
+    {
+        
+        width: 80%;
+        
+    }
+}
